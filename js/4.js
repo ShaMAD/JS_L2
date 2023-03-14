@@ -1,2 +1,7 @@
 let inputNum = +prompt("Введите число");
-alert(`В числе ${inputNum} количество сотен: ${Math.trunc(inputNum/100)%10}, десятков: ${Math.trunc(inputNum/10)%10}, единиц: ${inputNum % 10}`);
+
+GetAlert(inputNum);
+
+function GetAlert(num) {
+    alert(`В числе ${num} количество сотен: ${Math.trunc(num/100)%10}, десятков: ${Math.trunc(num/10)%10}, единиц: ${num % 10}`); 
+}
